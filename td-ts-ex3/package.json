@@ -1,0 +1,13 @@
+{
+  "name": "ex3",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node ../dist/ex3/main.js",
+    "test": "npm run build && npm run start"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

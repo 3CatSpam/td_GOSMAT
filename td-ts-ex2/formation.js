@@ -60,20 +60,20 @@ var Cours = /** @class */ (function () {
     Cours.prototype.afficherPrenomMax = function () {
         var idxMax = this.getIndexMeilleur();
         if (idxMax !== -1) {
-            console.log("Le meilleur participant est : ".concat(this._participants[idxMax]._prenom));
+            console.log("meilleur participant: ".concat(this._participants[idxMax]._prenom));
         }
         else {
-            console.log("Aucun participant dans le cours");
+            console.log("Aucun participant présent");
         }
     };
     Cours.prototype.afficherMinMax = function () {
         var idxMax = this.getIndexMeilleur();
         if (idxMax !== -1) {
             var participantMax = this._participants[idxMax];
-            console.log("La note minimale du meilleur participant est : ".concat(participantMax.trouverMin()));
+            console.log("note min du meilleur participant:".concat(participantMax.trouverMin()));
         }
         else {
-            console.log("Aucun participant dans le cours");
+            console.log("Aucun participant présent");
         }
     };
     Cours.prototype.trouverMoyenneParPrenom = function (prenom) {
